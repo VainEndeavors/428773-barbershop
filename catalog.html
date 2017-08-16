@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп Бородинский</title>
+    <title>Каталог - Барбершоп Бородинский</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -34,21 +35,25 @@
         </ul>
         <section class="filter-form">
           <h2 class="hidden-header">Фильтр производителей и товаров</h2>
-          <form action="" method="get">
+          <form method="get">
             <fieldset class="filter-fieldset">
               <legend>Производители:</legend>
-              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="baxter" checked>Baxter of California</label></li>
-              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="mrnatty">Mr Natty</label></li>
-              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="suavecito" checked>Suavecito</label></li>
-              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="malin-goetz">Malin+Goetz</label></li>
-              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="murrays">Murray's</label></li>
-              <label><input class="filter-input filter-input-checkbox" type="checkbox" name="american-crew" checked>American Crew</label>
+              <ul class="filter-vendors">
+                <li><label><input class="filter-input filter-input-checkbox" type="checkbox" name="baxter" checked>Baxter of California</label></li>
+                <li><label><input class="filter-input filter-input-checkbox" type="checkbox" name="mrnatty">Mr Natty</label></li>
+                <li><label><input class="filter-input filter-input-checkbox" type="checkbox" name="suavecito" checked>Suavecito</label></li>
+                <li><label><input class="filter-input filter-input-checkbox" type="checkbox" name="malin-goetz">Malin+Goetz</label></li>
+                <li><label><input class="filter-input filter-input-checkbox" type="checkbox" name="murrays">Murray's</label></li>
+                <li><label><input class="filter-input filter-input-checkbox" type="checkbox" name="american-crew" checked>American Crew</label></li>
+              </ul>
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend>Группы товаров:</legend>
-              <label><input class="filter-input filter-input-radio" type="radio" name="product-group" value="shaving-tools">Бритвенные принадлежности</label>
-              <label><input class="filter-input filter-input-radio" type="radio" name="product-group" value="care-goods" checked>Средства для ухода</label>
-              <label><input class="filter-input filter-input-radio" type="radio" name="product-group" value="accessories">Аксессуары</label>
+              <ul class="filter-goods">
+                <li><label><input class="filter-input filter-input-radio" type="radio" name="product-group" value="shaving-tools">Бритвенные принадлежности</label></li>
+                <li><label><input class="filter-input filter-input-radio" type="radio" name="product-group" value="care-goods" checked>Средства для ухода</label></li>
+                <li><label><input class="filter-input filter-input-radio" type="radio" name="product-group" value="accessories">Аксессуары</label></li>
+              </ul>
             </fieldset>
             <button class="btn" type="submit">Показать</button>
           </form>
